@@ -16,8 +16,12 @@ npm install
 ```
 Crea y aplica la primera migración para generar la base de datos.
 ```bash
-npx prisma migrate dev --name init
+npx prisma generate 
 ```
+```bash
+npx prisma migrate dev
+```
+
 ## Para probar en caliente o seguir codificando:
 
 ```bash
