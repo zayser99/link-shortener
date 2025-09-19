@@ -8,6 +8,19 @@ Está compuesto por dos partes principales:
 
 ---
 
+## 📂 Estructura del repositorio
+
+Este repositorio contiene tanto el **frontend** como el **backend** del proyecto de acortador de links.  
+Cada proyecto cuenta con su propio `README.md` donde se detallan los pasos necesarios para instalar dependencias, configurar variables de entorno y ejecutar la aplicación.
+
+- `/link-shortener-frontend` → Proyecto de interfaz de usuario con **Next.js**  
+- `/link-shortener-backend` → Proyecto de API con **NestJS** 
+
+👉 Para construir y ejecutar cada proyecto, consulta el `README.md` dentro de su respectiva carpeta.  
+
+
+---
+
 ## 🎯 Objetivo
 
 El objetivo principal de este proyecto es ofrecer una solución sencilla y práctica para gestionar enlaces.
