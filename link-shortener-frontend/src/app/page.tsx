@@ -3,11 +3,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import Header from "@/components/header"
 import Form from "@/components/form"
 import Result from "@/components/result"
+import { useFetchShortUrl } from "@/hooks/useFetchShortUrl"
 
 
 export default function Home() {
-
-
+  const { url, setUrl, shortUrl, handleGetShortUrl } = useFetchShortUrl();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
@@ -16,12 +16,13 @@ export default function Home() {
           <Header />
           <div className="space-y-4">
 
-            <Form />
+            <Form url={url} setUrl={setUrl} handleGetShortUrl={handleGetShortUrl} />
 
-            <Result shortenedUrl={"link"}/>
+            {shortUrl && (<Result shortenedUrl={shortUrl}/>)}
             
           </div>
 
+          {/* Footer */}
           <div className="mt-8 text-center">
             <p className="text-xs text-gray-500">Sergio Manuel Zaldivar Yerbes </p>
           </div>
